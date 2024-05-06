@@ -1,8 +1,155 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+  </head>
+  <body class=" flex flex-col-reverse md:flex-row sm:flex-row">
+    <!-- ------------------left col-------------------------- -->
+    <div class="lg:border-r border-gray-300 w-1/3 ">
+      <div class="flex flex-col items-center p-5 m-2">
+        <div class="flex flex-row m-3">
+          <img src="safran.png" alt="" class="w-8 h-8 mr-1 mt-1 lg:w-14 h-14 lg:mr-3" />
+          <h1 class="font-serif text-2xl italic font-bold lg:text-6xl md:text-4xl">Saffron</h1>
+        </div>
+        <p class="text-l lg:text-3xl m-3 md:text-2xl">725/RECIPES</p>
+      </div>
+
+      <div class="container mx-auto flex justify-center w-screen md:container mx-auto flex justify-center lg:container mx-auto flex justify-center" >
+        <table
+          class="w-5/6 text-sm text-left font-bold text-gray-500"
+        >
+          <tr >
+            <th colspan="2" >
+              <button
+                class="flex items-center justify-between px-4 py-2 hover:bg-gray-200"
+              >
+                Spice & Rice
+                <svg
+                  class="w-4 h-4 transition-transform transform"
+                  :class="{ 'rotate-180': open }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="currentColor" d="M7 10l5 5 5-5z" />
+                </svg>
+              </button>
+            </th>
+          </tr>
+          <tr class="hover:bg-gray-200">
+            <td class="px-6 py-4 border border-gray-300">Salad</td>
+            <td class="px-6 py-4 border border-gray-300">Ginger Garlic Paste</td>
+          </tr>
+          <tr class="hover:bg-gray-200">
+            <td class="px-6 py-4 border border-gray-300">Spices & more</td>
+            <td class="px-6 py-4 border border-gray-300">Hunan Sauce</td>
+          </tr>
+          <tr class="hover:bg-gray-200">
+            <td class="px-6 py-4 border border-gray-300">Rice</td>
+            <td class="px-6 py-4 border border-gray-300">Presssure Cooker Chickpeas</td>
+          </tr>
+          <tr class="hover:bg-gray-200">
+            <td class="px-6 py-4 border border-gray-300">Main Dish</td>
+            <td class="px-6 py-4 border border-gray-300 border-t-0">Shawarma Spice Blend</td>
+          </tr>
+          <tr class="hover:bg-gray-200">
+            <td class="px-6 py-4 border border-gray-300 ">Add Section</td>
+            <td class="px-6 py-4 border border-gray-300">Za'atar</td>
+          </tr>
+          <tr class="hover:bg-gray-200">
+            <td class="px-6 py-4 border border-gray-300"></td>
+            <td class="px-6 py-4 border border-gray-300">Add Recipe</td>
+          </tr>
+          <tr class="hover:bg-gray-200">
+            <td class="px-6 py-8 border border-gray-300"></td>
+            <td class="px-6 py-10 border border-gray-300"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- ------------------right col-------------------------- -->
+    <div class="w-2/3">
+      <nav>
+        <ul class="flex space-x-12 w-screen ml-10 mt-5">
+          <li>
+            <a href="#" class="hover:text-gray-300"
+              ><i class="fa-solid fa-pen"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="#" class="hover:text-gray-300"
+              ><i class="fa-solid fa-list-ul"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="#" class="hover:text-gray-300"
+              ><i class="fa-solid fa-calendar-days"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-300"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-300"
+              ><i class="fa-solid fa-ruler"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-300"
+              ><i class="fa-solid fa-share"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-300"
+              ><i class="fa-regular fa-floppy-disk"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-300"
+              ><i class="fa-solid fa-trash"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-300"
+              ><i class="fa-solid fa-ellipsis-vertical"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- ---------------------------main---------------------------- -->
+      <main class="m-10">
+        <header>
+            <h1 class="text-4xl font-serif py-2 lg:text-7xl font-serif py-4">HUNAN SAUCE</h1><hr>
+            <p class="font-serif text-xl italic py-2 lg:font-serif text-4xl italic py-4">A blend of sweet and sour with hot and spicy</p>
+        </header>
+            <div class="flex justify-center allign-center">
+                <img class="h-auto max-w-lg transition-all duration-300 rounded-lg blur-sm hover:blur-none w-full" src="images.jpg" alt="">
+            </div>
+        <footer class="flex space-x-12">
+            <div>
+            <h3 class="font-bold">Julie Award</h3><hr>
+            <p>Sauce for one stir-fry reciep</p>
+            </div>
+            <div>
+            <h3 class="text-gray-600 font-bold">TOTAL</h3>
+            <p class="text-gray-600 " >5 min</p>
+            </div>
+        </footer>
+      </main>
+    </div>
+
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
