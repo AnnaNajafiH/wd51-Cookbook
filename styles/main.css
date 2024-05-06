@@ -10,9 +10,9 @@
 }
 
 .rightside_mainContent{
-    background-color: blue;
+    /* background-color: blue; */
     min-width: 100%;
-    height: 85%;
+    min-height: 75%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -34,7 +34,7 @@
 .rightside_footer{
  display: grid;
  grid-template-columns: 1fr 1fr;
- /* background-color: blueviolet; */
+ background-color: blueviolet;
  /* padding: 20px; */
  min-width: 100%;
  
